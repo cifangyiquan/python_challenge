@@ -5,7 +5,7 @@
 # Copyright (c) 2017 cifangyiquan.com, Inc. All Rights Reserved
 # 
 ########################################################################
- 
+
 """
 File: 2.py
 Author: work(work@cifangyiquan)
@@ -26,6 +26,4 @@ for i in input:
         char = i
     ret += char
 
-
 print ret
-

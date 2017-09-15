@@ -5,7 +5,7 @@
 # Copyright (c) 2017 cifangyiquan.com, Inc. All Rights Reserved
 # 
 ########################################################################
- 
+
 """
 File: 4.py
 Author: work(work@cifangyiquan)

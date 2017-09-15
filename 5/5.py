@@ -5,7 +5,7 @@
 # Copyright (c) 2017 cifangyiquan.com, Inc. All Rights Reserved
 # 
 ########################################################################
- 
+
 """
 File: 5.py
 Author: work(work@cifangyiquan)
@@ -19,7 +19,7 @@ r = requests.get('http://www.pythonchallenge.com/pc/def/banner.p')
 ret = pickle.loads(r.text)
 
 for ch in ret:
-#print("".join([k * v for k, v in ch]))
+    # print("".join([k * v for k, v in ch]))
     ret = ''
     for k, v in ch:
         ret += k * v

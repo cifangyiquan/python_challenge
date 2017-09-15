@@ -5,7 +5,7 @@
 # Copyright (c) 2017 cifangyiquan.com, Inc. All Rights Reserved
 # 
 ########################################################################
- 
+
 """
 File: 4.py
 Author: work(work@cifangyiquan)
@@ -22,5 +22,3 @@ for line in fp:
         ret += m.group(1)
 
 print ret
-
-            

@@ -5,7 +5,7 @@
 # Copyright (c) 2017 cifangyiquan.com, Inc. All Rights Reserved
 # 
 ########################################################################
- 
+
 """
 File: 6.py
 Author: work(work@cifangyiquan)
@@ -20,7 +20,7 @@ comments = ''
 while True:
     data = zf.read(name)
     comments += zf.getinfo(name).comment
-#print data
+    # print data
     text = data.strip().split(' ')
     print text
     if len(text) <= 3:
