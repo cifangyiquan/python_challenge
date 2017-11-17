@@ -7,13 +7,13 @@
 ########################################################################
 
 """
-File: 4.py
+File: 3.py
 Author: work(work@cifangyiquan)
 Date: 2017/08/12 00:48:45
 """
 import re
 
-fp = open('4.input')
+fp = open('3.input')
 ret = ""
 for line in fp:
     line = line.strip()

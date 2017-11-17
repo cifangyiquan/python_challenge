@@ -13,7 +13,7 @@ Date: 2017/08/11 01:11:21
 """
 stat = {}
 
-fp = open('3.input')
+fp = open('2.input')
 ret = ''
 for line in fp:
     line = line.strip()
