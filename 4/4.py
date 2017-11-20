@@ -13,14 +13,25 @@ Date: 2017/08/12 01:23:28
 """
 
 import requests
+import re
+import traceback
+import sys
+import time
 
-nothing = '12345'
-for i in range(400):
-    url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + nothing
-    print url
-    r = requests.get(url)
-    line = r.text
-    ret_list = line.strip().split(' ')
-    nothing = ret_list[5]
-    print line
-print line
+try:
+    nothing = '12345'
+    for i in range(400):
+        url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + nothing
+        print url
+        time.sleep(0.5)
+        r = requests.get(url)
+        line = r.text
+        print line
+        m = re.match(r'.*?(\d+)', line)
+        if m:
+            nothing = m.group(1)
+        else:
+            print line
+            break
+except:
+    traceback.print_exc(limit=2, file=sys.stderr)

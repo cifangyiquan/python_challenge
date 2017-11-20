@@ -18,6 +18,8 @@ import pickle
 r = requests.get('http://www.pythonchallenge.com/pc/def/banner.p')
 ret = pickle.loads(r.text)
 
+print ret
+
 for ch in ret:
     # print("".join([k * v for k, v in ch]))
     ret = ''
